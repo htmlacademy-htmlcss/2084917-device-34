@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="page-header">
+      <nav class="navigation-menu">
+        <h1 class="visually-hidden">Cайт-поисковик Дивайс</h1>
+        <a class="navigation-logo" href="index.html">
+          <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
+        </a>
+        <form class="search-text" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="search-text">Текст поиска</label>
+          <input class="field" placeholder="Текст поиска" type="text" id="search-text" name="search-text" required>
+          <button class="button search-button" type="button">Найти</button>
+        </form>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Войти</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Сравнить</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Корзина</a>
+          </li>
+        </ul>
+
+        <div class="information-group">
+          <section class="catalog-goods">
+            <h2 class="catalog-goods">Каталог товаров</h2>
+            <ul class="additional-menu">
+              <li class="additional-menu-item">
+                <a class="navigation-menu-link" href="#">Доставка</a>
+              </li>
+              <li class="additional-menu-item">
+                <a class="navigation-menu-link" href="#">Гарантия</a>
+              </li>
+              <li class="additional-menu-item">
+                <a class="navigation-menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </nav>
+
+      <section class="goods-description">
+        <h3 class="visually-hidden">Описание товара</h3>
+        <img class="slider-image" src="" alt="Товар из списка каталога.">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <p class="goods-title"> Порхает как бабочка, жалит как пчела!</p>
+        <p class="goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+          под стандартную камеру.</p>
+        <div class="pagination-group">
+          <a class="more-inrofmation" href="#">Подробнее</a>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+        <div class="detailed-information">
+          <b class="details">800 м</b>
+          <span class="more-detalis">Дальность полета</span>
+          <b class="details">50 м</b>
+          <span class="more-detalis">Радиус поражения</span>
+        </div>
+      </section>
+        <section class="goods-list">
+          <h2 class="visually-hidden">Список категорий товара</h2>
+          <ul class="goods-category">
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Моноподы для селфи</a>
+            </li>
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Умные часы</a>
+            </li>
+            <li class="goods-category-item">
+              <a class="goods-category-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
+
+
+
+
+
+
+    </header>
 
   </body>
+
 </html>
