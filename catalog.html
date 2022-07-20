@@ -7,9 +7,9 @@
   </head>
 
   <header class="page-header">
-    <nav class="navigation-menu">
+    <nav class="navigation-user-menu">
       <h1 class="visually-hidden">Cайт-поисковик Девайс</h1>
-      <a class="navigation-logo" href="index.html">
+      <a class="navigation-logo-link" href="index.html">
         <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
       </a>
       <form class="search-text" action="https://echo.htmlacademy.ru/" method="post">
@@ -17,32 +17,32 @@
         <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
         <button class="button search-button" type="button">Найти</button>
       </form>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#"><span class="visually-hidden">Имя пользователя</span>Коля Петухов</a>
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#"><span class="visually-hidden">Имя пользователя</span>Коля Петухов</a>
           <button class="button button-log-out" type="submit">Выйти</button>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Сравнить</a>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">Сравнить</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <span class="visually-hidden">2</span>
-          <a class="navigation-link" href="#">Корзина</a>
+          <a class="navigation-user-link" href="#">Корзина</a>
         </li>
       </ul>
 
-      <div class="information-group">
+      <div class="navigation-container">
         <section class="catalog-goods">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <a class="catalog-goods" href="catalog.html">Каталог товаров</a>
-          <ul class="additional-menu">
-            <li class="additional-menu-item">
+          <ul class="navigation-menu">
+            <li class="navigation-menu-item">
               <a class="navigation-menu-link" href="#">Доставка</a>
             </li>
-            <li class="additional-menu-item">
+            <li class="navigation-menu-item">
               <a class="navigation-menu-link" href="#">Гарантия</a>
             </li>
-            <li class="additional-menu-item">
+            <li class="navigation-menu-item">
               <a class="navigation-menu-link" href="#contacts">Контакты</a>
             </li>
           </ul>
@@ -157,11 +157,13 @@
           <div class="catalog-sorting-container">
           <section class="catalog-sorting-group">
           <h3 class="catalog-sorting-title">Cортировка:</h3>
+          <div class="select-control-container"> </div>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
+        </div>
 
           <div class="card-toggle-group">
             <a class="card-toggle card-toggle-up" href="#">
@@ -174,6 +176,7 @@
           </section>
           </div>
 
+          <div class="goods-information-container">
           <section class="goods-information">
             <h3 class="visually-hidden">Информация о товаре</h3>
             <ul class="goods-list">
@@ -224,6 +227,7 @@
             </ul>
             <a class="button goods-card-button" href="#">Загрузить ещё</a>
           </section>
+        </div>
 
           <div class="pagination-container">
             <ul class="pagination">
@@ -267,7 +271,6 @@
               <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
           </div>
-
 
           <div class="footer-information-container">
             <section class="footer-information">

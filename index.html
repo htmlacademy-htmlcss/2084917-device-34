@@ -9,41 +9,43 @@
   <body>
 
     <header class="page-header">
-      <nav class="navigation-menu">
+      <nav class="navigation-user-menu">
         <h1 class="visually-hidden">Cайт-поисковик Девайс</h1>
         <a class="navigation-logo" href="index.html">
           <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
         </a>
+        <div class="navigation-user-container">
         <form class="search-text" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="text-search">Текст поиска</label>
           <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
           <button class="button search-button" type="button">Найти</button>
         </form>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+        <ul class="navigation-user-list">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <span class="visually-hidden">2</span>
-            <a class="navigation-link" href="#">Корзина</a>
+            <a class="navigation-user-link" href="#">Корзина</a>
           </li>
         </ul>
+      </div>
 
-        <div class="information-group">
+        <div class="navigation-container">
           <section class="catalog-goods">
             <h2 class="visually-hidden">Каталог товаров</h2>
-            <a class="catalog-goods" href="catalog.html">Каталог товаров</a>
-            <ul class="additional-menu">
-              <li class="additional-menu-item">
+            <a class="catalog-goods-link" href="catalog.html">Каталог товаров</a>
+            <ul class="navigation-menu">
+              <li class="navigation-menu-item">
                 <a class="navigation-menu-link" href="#">Доставка</a>
               </li>
-              <li class="additional-menu-item">
+              <li class="navigation-menu-item">
                 <a class="navigation-menu-link" href="#">Гарантия</a>
               </li>
-              <li class="additional-menu-item">
+              <li class="navigation-menu-item">
                 <a class="navigation-menu-link" href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -54,8 +56,9 @@
 
     <main class="main-index">
 
-      <section class="goods-description">
+      <section class="goods-slider">
         <h3 class="visually-hidden">Описание товара</h3>
+        <div class="slider-image-container">
         <img class="slider-image" src="" alt="Товар из списка каталога.">
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
@@ -63,10 +66,13 @@
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующее фото</span>
         </button>
+      </div>
+      <div class="slider-content-container">
         <p class="goods-title"> Порхает как бабочка, жалит как пчела!</p>
         <p class="goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
           под стандартную камеру.</p>
-        <div class="pagination-group">
+        </div>
+        <div class="content-group">
           <a class="more-inrofmation" href="#">Подробнее</a>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
@@ -86,11 +92,11 @@
             </li>
           </ol>
         </div>
-        <div class="detailed-information">
+        <div class="content-group detailed-information">
           <b class="details">800 м</b>
-          <span class="more-detalis">Дальность полета</span>
+          <span class="detalis-description">Дальность полета</span>
           <b class="details">50 м</b>
-          <span class="more-detalis">Радиус поражения</span>
+          <span class="detalis-description">Радиус поражения</span>
         </div>
       </section>
 
@@ -131,9 +137,12 @@
             <a class="special-information-link" href="#">Кредит</a>
           </li>
         </ul>
+
+        <div class="delivery-content-container">
         <p class="delivery-title">Доставка</p>
         <p class="delivery-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </div>
       </section>
 
       <section class="special-delivery">
@@ -182,6 +191,7 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <div class="newsletter-container">
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -189,6 +199,7 @@
           <button class="button button-newsletter" type="submit">Подписаться</button>
         </form>
         <p>Это бесплатно</p>
+      </div>
       </section>
     </main>
 
