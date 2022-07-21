@@ -6,16 +6,18 @@
     <title>Каталог</title>
   </head>
 
+  <body>
   <header class="page-header">
     <nav class="navigation-user-menu">
       <h1 class="visually-hidden">Cайт-поисковик Девайс</h1>
       <a class="navigation-logo-link" href="index.html">
         <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
       </a>
+      <div class="navigation-user-container">
       <form class="search-text" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="text-search">Текст поиска</label>
         <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
-        <button class="button search-button" type="button">Найти</button>
+        <button class="button search-button" type="submit">Найти</button>
       </form>
       <ul class="navigation-user-list">
         <li class="navigation-user-item">
@@ -30,6 +32,7 @@
           <a class="navigation-user-link" href="#">Корзина</a>
         </li>
       </ul>
+    </div>
 
       <div class="navigation-container">
         <section class="catalog-goods">
@@ -53,6 +56,7 @@
 
       <main class="main-inner">
         <header class="inner-header">
+          <div class="breadcrumbs-container">
           <h3 class="inner-header-title">Моноподы для селфи</h3>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -65,6 +69,7 @@
               <a class="breadcrumbs-link">Моноподы для селфи</a>
             </li>
           </ul>
+        </div>
         </header>
 
         <section class="catalog-goods">
@@ -157,7 +162,7 @@
           <div class="catalog-sorting-container">
           <section class="catalog-sorting-group">
           <h3 class="catalog-sorting-title">Cортировка:</h3>
-          <div class="select-control-container"> </div>
+          <div class="select-control-container"> 
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
@@ -266,61 +271,67 @@
             <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
           </a>
           <h2 class="visually-hidden">Адрес интернет-магазина</h2>
-          <div class="address-container">
-            <address class="contacts-address">
-              <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </address>
+          <div class="footer-contacts-container">
+            <div class="address-container">
+              <address class="contacts-address">
+                <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              </address>
+            </div>
+
+            <div class="footer-information-container">
+              <section class="footer-information">
+                <h2 class="visually-hidden">Доставка, Гарантия, Контакты</h2>
+                <ul class="footer-menu">
+                  <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="#">Доставка</a>
+                  </li>
+                  <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="#">Гарантия</a>
+                  </li>
+                  <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="contacts-phone-container">
+              <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </div>
           </div>
 
-          <div class="footer-information-container">
-            <section class="footer-information">
-              <h2 class="visually-hidden">Доставка, Гарантия, Контакты</h2>
-              <ul class="footer-menu">
-                <li class="footer-menu-item">
-                  <a class="footer-menu-link" href="#">Доставка</a>
-                </li>
-                <li class="footer-menu-item">
-                  <a class="footer-menu-link" href="#">Гарантия</a>
-                </li>
-                <li class="footer-menu-item">
-                  <a class="footer-menu-link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
-            </section>
+          <div class="footer-social-container">
+            <div class="footer-social-group">
+              <section class="footer-social">
+                <h2 class="visually-hidden">Социальные сети</h2>
+                <ul class="footer-social-list">
+                  <li class="footer-social-item">
+                    <a class="footer-social-link" href="https://t.me/htmlacademy">
+                      <span class="visually-hidden">Telegram</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
+                      <span class="visually-hidden">Youtube</span>
+                    </a>
+                  </li>
+                  <li class="footer-social-item">
+                    <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+                      <span class="visually-hidden">Twitter</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="copyright-container">
+              <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в
+                  .htmlacademy</span>
+              </a>
+            </div>
           </div>
-
-      <div class="contacts-phone-container">
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
-
-      <div class="footer-social-container">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
         </section>
-      </div>
 
-      <div class="copyright-container">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в
-            .htmlacademy</span>
-        </a>
-      </div>
-    </section>
-
-  </footer>
+      </footer>
+</body>
+</html>

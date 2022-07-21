@@ -15,24 +15,24 @@
           <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
         </a>
         <div class="navigation-user-container">
-        <form class="search-text" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="text-search">Текст поиска</label>
-          <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
-          <button class="button search-button" type="button">Найти</button>
-        </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-user-item">
-            <span class="visually-hidden">2</span>
-            <a class="navigation-user-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </div>
+          <form class="text-search" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="text-search">Текст поиска</label>
+            <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
+            <button class="button search-button" type="submit">Найти</button>
+          </form>
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Войти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <span class="visually-hidden">2</span>
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
 
         <div class="navigation-container">
           <section class="catalog-goods">
@@ -59,18 +59,19 @@
       <section class="goods-slider">
         <h3 class="visually-hidden">Описание товара</h3>
         <div class="slider-image-container">
-        <img class="slider-image" src="" alt="Товар из списка каталога.">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
-      </div>
-      <div class="slider-content-container">
-        <p class="goods-title"> Порхает как бабочка, жалит как пчела!</p>
-        <p class="goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-          под стандартную камеру.</p>
+          <img class="slider-image" src="" alt="Товар из списка каталога.">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+        <div class="slider-content-container">
+          <p class="goods-title"> Порхает как бабочка, жалит как пчела!</p>
+          <p class="goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным
+            под стандартную камеру.</p>
         </div>
         <div class="content-group">
           <a class="more-inrofmation" href="#">Подробнее</a>
@@ -92,7 +93,7 @@
             </li>
           </ol>
         </div>
-        <div class="content-group detailed-information">
+        <div class="slider-content-container detailed-information">
           <b class="details">800 м</b>
           <span class="detalis-description">Дальность полета</span>
           <b class="details">50 м</b>
@@ -100,6 +101,7 @@
         </div>
       </section>
 
+      <div class="goods-list-container">
       <section class="goods-list">
         <h2 class="visually-hidden">Список категорий товара</h2>
         <ul class="goods-category">
@@ -123,7 +125,9 @@
           </li>
         </ul>
       </section>
+    </div>
 
+    <div class="special-information-container">
       <section class="special-information">
         <h2 class="visually-hidden">Условия доставки, гарантии и кредитования</h2>
         <ul class="special-information-list">
@@ -139,11 +143,13 @@
         </ul>
 
         <div class="delivery-content-container">
-        <p class="delivery-title">Доставка</p>
-        <p class="delivery-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="delivery-title">Доставка</p>
+          <p class="delivery-subtitle">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
       </section>
+    </div>
 
       <section class="special-delivery">
         <h3 class="visually-hidden">Особые условия доставки</h3>
@@ -151,6 +157,7 @@
         <span class="visually-hidden">Информация</span>
       </section>
 
+      <div class="contacts-information-container">
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
         <p class="about-title">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -186,35 +193,36 @@
         </ul>
         <a class="contacts-us" href="#">Напишите нам</a>
       </section>
+    </div>
 
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          <div class="newsletter-container">
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="newsletter-email">email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-            required>
-          <button class="button button-newsletter" type="submit">Подписаться</button>
-        </form>
-        <p>Это бесплатно</p>
-      </div>
+        <div class="newsletter-container">
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="newsletter-email">email</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+              required>
+            <button class="button button-newsletter" type="submit">Подписаться</button>
+          </form>
+          <p>Это бесплатно</p>
+        </div>
       </section>
     </main>
 
-      <footer class="page-footer">
-        <section class="footer-contacts">
-          <a class="navigation-logo" href="index.html">
-            <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
-          </a>
-          <h2 class="visually-hidden">Адрес интернет-магазина</h2>
+    <footer class="page-footer">
+      <section class="footer-contacts">
+        <a class="navigation-logo" href="index.html">
+          <img class="navigation-logo" src="" alt="Логотип сайта Дивайс.">
+        </a>
+        <h2 class="visually-hidden">Адрес интернет-магазина</h2>
+        <div class="footer-contacts-container">
           <div class="address-container">
             <address class="contacts-address">
               <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
           </div>
-
 
           <div class="footer-information-container">
             <section class="footer-information">
@@ -236,8 +244,10 @@
           <div class="contacts-phone-container">
             <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
+        </div>
 
-          <div class="footer-social-container">
+        <div class="footer-social-container">
+          <div class="footer-social-group">
             <section class="footer-social">
               <h2 class="visually-hidden">Социальные сети</h2>
               <ul class="footer-social-list">
@@ -261,12 +271,14 @@
           </div>
 
           <div class="copyright-container">
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в .htmlacademy</span>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в
+                .htmlacademy</span>
             </a>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </footer>
+    </footer>
 
   </body>
 
