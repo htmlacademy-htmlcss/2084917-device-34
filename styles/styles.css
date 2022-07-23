@@ -50,9 +50,6 @@ img {
 }
 
 .page-header {
-  background-image: url(../images/pictures-html/background-yellow-navigation.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #000000;
   background-color: #FFE17F;
 }
@@ -60,8 +57,9 @@ img {
 .button {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -127,8 +125,9 @@ img {
 .link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -190,17 +189,12 @@ img {
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
+  letter-spacing: -0.02em;
   color: #000000;
   background-color: #ffffff;
-  background-image: url(../images/pictures-html/background-yellow-goods-list.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .special-information-container {
-  background-image: url(../images/pictures-html/background-gray-delivery-guaranty-loan.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -229,10 +223,11 @@ img {
 .special-delivery-link {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 23px;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -244,6 +239,7 @@ img {
   font-weight: 700;
   text-transform: none;
   text-decoration: none;
+  letter-spacing: -0.02em;
   color: #000000;
   background-color: #ffffff;
 }
@@ -282,9 +278,6 @@ img {
 }
 
 .newsletter {
-  background-image: url(../images/pictures-html/background-grey-newsletter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -312,9 +305,6 @@ img {
 }
 
 .page-footer {
-  background-image: url(../images/pictures-html/background-grey-footer.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #ffffff;
   background-color: #444444;
 }
@@ -348,9 +338,6 @@ img {
 }
 
 .catalogs-goods-container {
-  background-image: url(../images/picture-catalog/background-grey-catalog.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -362,6 +349,7 @@ img {
   line-height: 19px;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -371,6 +359,7 @@ img {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  letter-spacing: -0.02em;
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -415,6 +404,7 @@ img {
   line-height: 20px;
   font-weight: 700;
   text-transform: none;
+  letter-spacing: -0.02em;
   color: #000000;
   background-color: #ffffff;
 }
@@ -439,6 +429,7 @@ img {
   line-height: 19px;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #ffffff;
 }
@@ -454,6 +445,7 @@ img {
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
+  opacity: 0.3;
   color: #444444;
   background-color: #EBEBEB;
 }
@@ -462,9 +454,16 @@ img {
 .pagination-next {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
   color: #000000;
   background-color: #EBEBEB;
+}
+
+/* для ссылок пагинации в неактивном состоянии */
+
+.disabled {
+  opacity: 0;
 }
