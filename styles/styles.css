@@ -133,6 +133,20 @@ img {
   color: #000000;
   background-color: #FFE17F;
 }
+.navigation-submenu-list {
+/* display: none; */
+}
+
+.navigation-submenu-link {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFE17F;
+}
 
 .title {
   font-family: "Raleway", sans-serif;
@@ -194,7 +208,7 @@ img {
   background-color: #ffffff;
 }
 
-.special-information-container {
+.special-information {
   color: #000000;
   background-color: #F0F0F0;
 }
@@ -458,6 +472,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  opacity: 1;
   color: #000000;
   background-color: #EBEBEB;
 }
