@@ -12,7 +12,7 @@
     <header class="page-header">
       <nav class="navigation-user-menu">
         <h1 class="visually-hidden">Cайт-поисковик Девайс</h1>
-        <a class="navigation-logo" href="#">
+        <a class="navigation-logo-link" href="#">
           <img class="navigation-logo" src="images/pictures-html/logo-device-black.svg" width="145" height="36"
             alt="Логотип сайта Дивайс.">
         </a>
@@ -38,7 +38,7 @@
         <section class="catalog-goods">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <a class="link catalog-goods-link " href="catalog.html">Каталог товаров</a>
-          <ul class="navigation-menu">
+          <ul class="navigation-menu-list">
             <li class="navigation-menu-item">
               <a class="link navigation-menu-link " href="#">Доставка</a>
             </li>
@@ -197,18 +197,18 @@
         </ul>
       </section>
 
-
+      <div class="special-information-container">
       <section class="special-information">
         <h2 class="visually-hidden">Условия доставки, гарантии и кредитования</h2>
         <ul class="special-information-list">
           <li class="special-information-item">
-            <a class="link special-information-link" href="#">Доставка</a>
+            <a class="link special-information-link special-information-link-current" href="#">Доставка</a>
           </li>
           <li class="special-information-item">
-            <a class="link special-information-link" href="#">Гарантия</a>
+            <a class="link special-information-link special-information-link-current" href="#">Гарантия</a>
           </li>
           <li class="special-information-item">
-            <a class="link special-information-link" href="#">Кредит</a>
+            <a class="link special-information-link special-information-link-current" href="#">Кредит</a>
           </li>
         </ul>
         <div class="delivery-content-container delivery-container">
@@ -217,19 +217,20 @@
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
         <div class="delivery-content-container guaranty-container">
-          <p class="title delivery-title">Гарантия</p>
-          <p class="subtitle delivery-subtitle">Если из-за возгорания купленного у нас товара у вас
+          <p class="title guaranty-title">Гарантия</p>
+          <p class="subtitle guaranty-subtitle">Если из-за возгорания купленного у нас товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.
           </p>
         </div>
         <div class="delivery-content-container loan-container">
-          <p class="title delivery-title">Кредит</p>
-          <p class="subtitle delivery-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут
+          <p class="title loan-title">Кредит</p>
+          <p class="subtitle loan-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут
             для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
           </p>
         </div>
       </section>
+      </div>
 
       <section class="special-delivery">
         <h3 class="visually-hidden">Особые условия доставки</h3>
@@ -283,11 +284,13 @@
       </div>
 
       <section class="newsletter">
+        <div class="newsletter-content">
         <h2 class="title newsletter-title">Подпишитесь на рассылку</h2>
         <p class="subtitle newsletter-subtitle">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
-        <div class="newsletter-container">
+        </div>
+        <div class="newsletter-group">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">email</label>
             <input class="field-newsletter" placeholder="Ваш e-mail" type="email" name="newsletter-email"
@@ -302,8 +305,8 @@
 
     <footer class="page-footer">
       <section class="footer-contacts">
-        <a class="navigation-logo" href="index.html">
-          <img class="navigation-logo" src="images/pictures-html/logo-device-yellow.svg" width="145" height="36"
+        <a class="footer-navigation-logo" href="index.html">
+          <img class="footer-navigation-logo" src="images/pictures-html/logo-device-yellow.svg" width="145" height="36"
             alt="Логотип сайта Дивайс.">
         </a>
         <h2 class="visually-hidden">Адрес интернет-магазина</h2>
@@ -359,7 +362,6 @@
               </ul>
             </section>
           </div>
-
           <div class="copyright-container">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">Сделано в
                 .htmlacademy.</span>
