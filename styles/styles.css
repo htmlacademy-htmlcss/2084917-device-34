@@ -722,6 +722,15 @@ img {
   list-style-type: none;
 }
 
+.goods-image {
+  margin-bottom: 32px;
+}
+
+.goods-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .goods-card-title {
   font: inherit;
   font-size: 18px;
@@ -738,6 +747,8 @@ img {
 }
 
 .goods-card-price {
+  display: block;
+  margin-top: 32px;
   font: inherit;
   font-size: 18px;
   line-height: 22px;
