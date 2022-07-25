@@ -751,6 +751,7 @@ img {
 
 .catalog-filter-title,
 .catalog-sorting-title {
+  margin-bottom: 35px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -759,6 +760,10 @@ img {
   letter-spacing: 0.2em;
   color: #000000;
   background-color: #F0F0F0;
+}
+
+.catalog-filter-group {
+margin-bottom: 35px;
 }
 
 .catalog-filter-subtitle {
