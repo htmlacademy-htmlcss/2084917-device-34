@@ -157,7 +157,7 @@ img {
 }
 
 .navigation-user-list {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-user-link {
@@ -305,7 +305,18 @@ list-style-type: none;
   list-style: none;
 }
 
+.goods-category-item {
+  display: grid;
+  width: 160px;
+  grid-template-columns: 160px;
+  grid-template-rows: 160px 60px;
+  gap: 32px 40px;
+}
+
 .goods-category-link {
+  display: grid;
+  grid-row: 2/4;
+  grid-column: 1/2;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -583,6 +594,7 @@ list-style-type: none;
 .breadcrumbs-container {
   width: 1079px;
   margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .breadcrumbs-list {
@@ -616,11 +628,11 @@ list-style-type: none;
 }
 
 .catalog-goods {
-width: 320px;
+  width: 320px;
 }
 
 .catalog-container {
-width: 840px;
+  width: 840px;
 }
 
 .catalog-filter-title,
@@ -680,8 +692,8 @@ width: 840px;
 }
 
 .card-toggle-group {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-toggle {
@@ -696,8 +708,8 @@ flex-wrap: wrap;
 }
 
 .goods-information {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-goods-list {
