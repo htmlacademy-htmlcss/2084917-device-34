@@ -106,6 +106,7 @@ img {
   font-weight: 400;
   color: #000000;
   background-color: #FFE17F;
+  opacity: 0.3;
 }
 
 .page-header {
@@ -133,18 +134,9 @@ img {
 
 .navigation-user-container {
   display: flex;
-  justify-content: space-between;
   width: 1040px;
   margin-bottom: 30px;
   padding-left: 60px;
-}
-
-.navigation-user-list {
-  display: flex;
-  justify-content: space-between;
-  width: 240px;
-  margin: 0;
-  padding: 0;
 }
 
 .field {
@@ -156,8 +148,32 @@ img {
   background-color: transparent;
 }
 
+.login-link {
+  margin-right: 26px;
+  margin-left: 26px;
+}
+
+.navigation-user-name {
+  margin-left: 27px;
+  margin-right: 28px;
+}
+
 .navigation-user-list {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
   list-style-type: none;
+}
+
+.navigation-user-item {
+margin-right: 36px;
+}
+
+.navigation-user-item:last-child {
+  margin: 0;
 }
 
 .navigation-user-link {
@@ -190,11 +206,8 @@ img {
   justify-content: space-between;
 }
 
-.navigation-submenu-list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  /* display: none; */
+.catalog-goods-link {
+padding: 25px 57px 25px 0;
 }
 
 .navigation-menu-list {
@@ -202,6 +215,13 @@ img {
   justify-content: space-between;
   width: 471px;
   list-style-type: none;
+}
+
+.navigation-submenu-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  /* display: none; */
 }
 
 .navigation-submenu-link {
@@ -284,6 +304,34 @@ img {
 
 .slider-image-container {
   margin-right: 40px;
+}
+
+.goods-title {
+margin-bottom: 29px;
+}
+
+.goods-subtitle {
+margin-bottom: 51px;
+}
+
+.content-group {
+margin-bottom: 49px;
+}
+
+.details-group-container {
+  display: flex;
+}
+
+.details-group {
+margin-right: 20px;
+}
+
+.details {
+ margin-bottom: 12px;
+}
+
+.details-description {
+margin: 0;
 }
 
 .slider-fitbit-container {
@@ -723,7 +771,7 @@ img {
 }
 
 .goods-image {
-  margin-bottom: 32px;
+  object-fit: contain;
 }
 
 .goods-card-content {
@@ -743,6 +791,7 @@ img {
 }
 
 .goods-card-link {
+  margin-bottom: 32px;
   text-decoration: none;
 }
 
