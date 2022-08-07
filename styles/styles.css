@@ -96,7 +96,7 @@ img {
 }
 
 .button-newsletter {
-  background-color: #F0F0F0;
+  background-color: transparent;
 }
 
 .button-log-out {
@@ -105,7 +105,7 @@ img {
   line-height: 30px;
   font-weight: 400;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: transparent;
   opacity: 0.3;
 }
 
@@ -177,6 +177,7 @@ img {
 }
 
 .navigation-user-link {
+  display: inline-block;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
@@ -184,7 +185,7 @@ img {
   text-transform: none;
   text-decoration: none;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: transparent;
 }
 
 .goods-amount {
@@ -196,35 +197,49 @@ img {
   background-color: #ffffff;
 }
 
-.navigation-menu-container {
+.navigation-catalog-goods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1040px;
   padding-left: 60px;
 }
 
-.navigation-catalog-goods {
-  display: flex;
-  justify-content: space-between;
-}
-
 .catalog-goods-link {
+  display: block;
+  margin: 0;
   padding: 25px 57px 25px 0;
 }
 
 .navigation-menu-list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 471px;
   list-style-type: none;
+}
+
+.navigation-submenu {
+  display: flex;
+  margin: 0;
+  padding-left: 60px;
+  width: 675px;
 }
 
 .navigation-submenu-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  margin-right: 30px;
+  margin-bottom: 27px;
+  padding: 0;
   list-style-type: none;
   /* display: none; */
 }
 
 .navigation-submenu-link {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -232,10 +247,11 @@ img {
   text-transform: none;
   text-decoration: none;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: transparent;
 }
 
 .link {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -244,27 +260,31 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  background-color: #FFE17F;
+  background-color: transparent;
 }
 
 .title {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
   text-transform: none;
   color: #000000;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .subtitle {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   text-transform: none;
   color: #444444;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .page-container {
@@ -307,11 +327,15 @@ img {
 }
 
 .goods-title {
+  margin: 0;
   margin-bottom: 29px;
+  padding: 0;
 }
 
 .goods-subtitle {
+  margin: 0;
   margin-bottom: 51px;
+  padding: 0;
 }
 
 .content-group {
@@ -390,6 +414,8 @@ img {
 }
 
 .special-information-list {
+  margin: 0;
+  padding: 0;
   margin-right: 116px;
   list-style-type: none;
 }
@@ -402,32 +428,31 @@ img {
   margin-bottom: 0;
 }
 
-.special-information-link {
-  background-color: #F0F0F0;
-}
-
-.delivery-title,
-.delivery-subtitle,
-.loan-title,
-.loan-subtitle,
-.guaranty-title,
-.guaranty-subtitle {
-  background-color: #F0F0F0;
-}
-
-.delivery-title {
+.content-title {
+  margin: 0;
   margin-bottom: 34px;
+  padding: 0;
 }
 
 .delivery-subtitle {
+  margin: 0;
+  padding: 0;
   width: 452px;
 }
 
-.guaranty-container {
-  display: none;
+.guaranty-subtitle {
+  margin: 0;
+  padding: 0;
+  width: 479px;
 }
 
-.loan-container {
+.loan-subtitle {
+  margin: 0;
+  padding: 0;
+  width: 475px;
+}
+
+.content-container {
   display: none;
 }
 
@@ -441,6 +466,7 @@ img {
 }
 
 .special-delivery-link {
+  display: block;
   padding: 40px 125px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -450,7 +476,7 @@ img {
   text-decoration: none;
   letter-spacing: 0.2em;
   color: #000000;
-  background-color: #F0F0F0;
+  background-color: transparent;
 }
 
 .contacts-information-container {
@@ -461,24 +487,35 @@ img {
 }
 
 .about-us {
+  margin: 0;
+  padding: 0;
   width: 520px;
   margin-right: 108px;
 }
 
 .about-us-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 48px;
 }
 
 .about-subtitle {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
 .about-delivery-subtitle {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
 .delivery-companies-list {
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
+  list-style-type: none;
 }
 
 .delivery-companies-item {
@@ -486,6 +523,7 @@ img {
 }
 
 .delivery-companies-link {
+  display: block;
   font-family: inherit;
   font-size: 18px;
   line-height: 20px;
@@ -502,15 +540,21 @@ img {
 }
 
 .contacts-title {
+  margin: 0;
   margin-bottom: 48px;
+  padding: 0;
 }
 
 .contacts-subtitle {
+  margin: 0;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .online-shop-title,
 .schedule-title {
+  margin: 0;
+  padding: 0;
   font-family: inherit;
   font-size: 24px;
   line-height: 30px;
@@ -521,7 +565,9 @@ img {
 }
 
 .online-shop-title {
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
 }
 
 .contacts-address,
@@ -556,7 +602,9 @@ img {
 }
 
 .schedule-title {
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
 }
 
 .newsletter {
@@ -568,16 +616,13 @@ img {
 
 .newsletter-content {
   display: flex;
+  justify-content: space-between;
   padding: 64px 133px 144px 147px;
 }
 
-.newsletter-title,
-.newsletter-subtitle {
-  background-color: #F0F0F0;
-}
-
 .newsletter-title {
-  margin-right: 252px;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-group {
@@ -592,7 +637,7 @@ img {
   line-height: 30px;
   font-weight: 400;
   color: #444444;
-  background-color: #F0F0F0;
+  background-color: transparent;
 }
 
 .newsletter-tip {
@@ -611,10 +656,12 @@ img {
 }
 
 .footer-contacts {
+  display: block;
   padding: 62px 140px 61px;
 }
 
 .footer-navigation-logo {
+  display: block;
   margin-bottom: 35px;
 }
 
@@ -656,6 +703,7 @@ img {
 }
 
 .footer-menu-link {
+  display: block;
   color: #ffffff;
   background-color: #444444;
 }
@@ -684,9 +732,9 @@ img {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .footer-social-item {
@@ -720,6 +768,7 @@ img {
 }
 
 .breadcrumbs-link {
+  display: block;
   font-family: inherit;
   font-size: 16px;
   line-height: 19px;
@@ -751,7 +800,9 @@ img {
 
 .catalog-filter-title,
 .catalog-sorting-title {
+  margin: 0;
   margin-bottom: 35px;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -763,10 +814,12 @@ img {
 }
 
 .catalog-filter-group {
-margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .catalog-filter-subtitle {
+  margin: 0;
+  padding: 0;
   font: inherit;
   font-size: 18px;
   line-height: 20px;
@@ -851,6 +904,8 @@ margin-bottom: 35px;
 }
 
 .goods-card-title {
+  margin: 0;
+  padding: 0;
   font: inherit;
   font-size: 18px;
   line-height: 20px;
@@ -862,6 +917,7 @@ margin-bottom: 35px;
 }
 
 .goods-card-link {
+  display: block;
   margin-bottom: 32px;
   text-decoration: none;
 }
@@ -879,6 +935,7 @@ margin-bottom: 35px;
 }
 
 .goods-card-button {
+  display: block;
   width: 760px;
   margin: 0 auto;
   margin-bottom: 44px;
@@ -907,6 +964,7 @@ margin-bottom: 35px;
 }
 
 .pagination-link {
+  display: block;
   padding: 16px 25px 16px 25px;
   font: inherit;
   font-size: 16px;
