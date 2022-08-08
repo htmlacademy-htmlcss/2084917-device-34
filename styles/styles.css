@@ -49,6 +49,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -749,6 +750,7 @@ img {
 .breadcrumbs-container {
   width: 1079px;
   margin: 0 auto;
+  margin-top: 35px;
   margin-bottom: 35px;
 }
 
@@ -794,7 +796,7 @@ img {
 .catalog-sorting-title {
   margin: 0;
   margin-bottom: 35px;
-  padding: 0;
+  padding-top: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -846,6 +848,10 @@ img {
   justify-content: space-between;
 }
 
+.select-control-container {
+padding-top: 20px;
+}
+
 .select-control {
   font: inherit;
   font-size: 18px;
@@ -856,6 +862,7 @@ img {
 }
 
 .card-toggle-group {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -879,7 +886,7 @@ img {
 .catalog-goods-list {
   display: grid;
   grid-template-columns: 360px 360px;
-  gap: 40px;
+  gap: 44px 40px;
   padding: 0;
   margin: 0;
   margin-bottom: 44px;
@@ -916,7 +923,6 @@ img {
 
 .goods-card-price {
   display: block;
-  margin-top: 32px;
   font: inherit;
   font-size: 18px;
   line-height: 22px;
@@ -951,8 +957,24 @@ img {
 .pagination-list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.pagination-number-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  list-style-type: none;
+}
+
+.pagination-item {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -963,9 +985,9 @@ img {
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
-  opacity: 0.3;
   color: #444444;
   background-color: #EBEBEB;
+  opacity: 0.3;
 }
 
 .pagination-prev,
@@ -980,6 +1002,14 @@ img {
   color: #000000;
   background-color: #EBEBEB;
 }
+
+/* .pagination-prev {
+  margin-right: auto;
+}
+
+.pagination-next {
+  margin-left: auto;
+} */
 
 /* для ссылок пагинации в неактивном состоянии */
 
