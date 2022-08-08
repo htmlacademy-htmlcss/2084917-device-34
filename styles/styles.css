@@ -294,7 +294,11 @@ img {
 }
 
 .goods-slider {
-  display: none;
+  display: flex;
+}
+
+.goods-slider-container {
+  /* display: none; */
 }
 
 .goods-slider-current {
