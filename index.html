@@ -10,8 +10,8 @@
   <body>
 
     <header class="page-header">
-      <nav class="navigation-user-menu">
-        <h1 class="visually-hidden">Cайт-поисковик Девайс</h1>
+      <nav class="navigation-user-menu page-content-container">
+        <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
         <a class="navigation-logo-link" href="#">
           <img class="navigation-logo" src="images/pictures-html/logo-device-black.svg" width="145" height="36"
             alt="Логотип сайта Дивайс.">
@@ -82,18 +82,17 @@
 
     <main class="main-index main-container">
 
-      <div class="page-container">
-        <div class="slider-container">
-          <div class="slider-quadcopter-container">
-            <section class="goods-slider">
+        <div class="slider-container page-content-container">
+            <section class="goods-slider goods-slider-current">
               <h3 class="visually-hidden">Описание товара</h3>
               <div class="slider-image-container">
                 <img class="slider-image" src="images/pictures-html/slider-quadcopter.jpg" width="560" height="560"
                   alt="Товар из списка каталога.">
               </div>
+              <span class="slider-number">01</span>
               <div class="slider-content-container">
-                <p class="title goods-title"> Порхает как бабочка, жалит как пчела!</p>
-                <p class="subtitle goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                <p class="title goods-title"> Порхает&nbsp;как&nbsp;бабочка,<br>жалит как пчела!</p>
+                <p class="subtitle goods-subtitle"> Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером,
                   замаскированным под стандартную камеру.
                 </p>
                 <div class="content-group">
@@ -111,16 +110,18 @@
                 </div>
               </div>
             </section>
-          </div>
 
-          <div class="slider-fitbit-container">
             <section class="goods-slider">
               <h3 class="visually-hidden">Описание товара</h3>
               <div class="slider-image-container">
                 <img class="slider-image" src="images/pictures-html/slider-fitbit.jpg" width="560" height="560"
                   alt="Товар из списка каталога.">
-                <p class="title goods-title">Худеем правильно!</p>
-                <p class="subtitle goods-subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+              </div>
+              <span class="slider-number">02</span>
+              <div class="slider-content-container">
+                <p class="title goods-title">Худеем<br>правильно!</p>
+                <p class="subtitle goods-subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не
+                  пропускать
                   занятия и соблюдать диету.
                 </p>
                 <div class="content-group">
@@ -132,32 +133,39 @@
                 </dl>
               </div>
             </section>
-          </div>
 
-          <div class="selfie-stick-container">
             <section class="goods-slider">
               <h3 class="visually-hidden">Описание товара</h3>
               <div class="slider-image-container">
                 <img class="slider-image" src="images/pictures-html/slider-selfie-stick.jpg" width="560" height="560"
                   alt="Товар из списка каталога.">
-                <p class="title goods-title">Делай селфи, как Бен Стиллер!</p>
-                <p class="subtitle goods-subtitle">Самая длинная палка для селфи доступна в нашем магазине. Восемь
-                  (Восемь, Карл!) метров длиной и весом всего 5 кг.
-                </p>
-                <div class="content-group">
-                  <a class="button button-inrofmation" href="#">Подробнее</a>
                 </div>
-                <dl class="details-group">
-                  <dt class="details">8,5 м</dt>
-                  <dd class="details-description">Длина палки</dd>
-                  <dt class="details">5 кг</dt>
-                  <dd class="details-description">Вес палки</dd>
-                  <dt class="details">Карбон</dt>
-                  <dd class="details-description">Материал</dd>
-                </dl>
-              </div>
+                <span class="slider-number">03</span>
+                <div class="slider-content-container">
+                  <p class="title goods-title">Делай селфи,<br>как Бен Стиллер!</p>
+                  <p class="subtitle goods-subtitle">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь
+                    (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                  </p>
+                  <div class="content-group">
+                    <a class="button button-inrofmation" href="#">Подробнее</a>
+                  </div>
+                  <div class="details-group-container">
+                    <dl class="details-group">
+                      <dt class="details">8,5 м</dt>
+                      <dd class="details-description">Длина палки</dd>
+                    </dl>
+                    <dl class="details-group">
+                      <dt class="details">5 кг</dt>
+                      <dd class="details-description">Вес палки</dd>
+                    </dl>
+                    <dl class="details-group">
+                      <dt class="details">Карбон</dt>
+                      <dd class="details-description">Материал</dd>
+                    </dl>
+                  </div>
+                </div>
             </section>
-          </div>
+
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото.</span>
           </button>
@@ -185,7 +193,7 @@
 
         <section class="goods-list">
           <h2 class="visually-hidden">Список категорий товара</h2>
-          <ul class="goods-category-list">
+          <ul class="goods-category-list page-content-container">
             <li class="goods-category-item">
               <span class="visually-hidden">Картинка.</span>
               <a class="goods-category-link" href="#">Виртуальная реальность</a>
@@ -209,7 +217,7 @@
         </section>
 
         <div class="special-information-container">
-          <section class="special-information">
+          <section class="special-information page-content-container">
             <h2 class="visually-hidden">Условия доставки, гарантии и кредитования</h2>
             <ul class="special-information-list">
               <li class="special-information-item">
@@ -222,7 +230,7 @@
                 <a class="link special-information-link" href="#">Кредит</a>
               </li>
             </ul>
-            <div class="current-content-container">
+            <div class="content-container content-container-current">
               <p class="title content-title">Доставка</p>
               <p class="subtitle delivery-subtitle">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду
                 совершенно
@@ -244,14 +252,14 @@
           </section>
         </div>
 
-        <section class="special-delivery">
+        <section class="special-delivery page-content-container">
           <h3 class="visually-hidden">Особые условия доставки</h3>
           <a class="special-delivery-link" href="#">Доставим редкий товар под заказ
             <span class="visually-hidden">Информация.</span>
           </a>
         </section>
 
-        <div class="contacts-information-container">
+        <div class="contacts-information-container page-content-container">
           <section class="about-us">
             <h2 class="title about-us-title">О нас</h2>
             <p class="subtitle about-subtitle">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в
@@ -297,14 +305,13 @@
         </div>
 
         <section class="newsletter">
-          <div class="newsletter-content">
+          <div class="newsletter-content page-content-container">
             <h2 class="title newsletter-title">Подпишитесь<br> на рассылку</h2>
             <p class="subtitle newsletter-subtitle">Еженедельный дайджест с обзорами новинок,<br>длительными
-              тест-драйвами,
-              распаковками, a также акции, спецпредложения и вот это вот всё.
+              тест-драйвами, распаковками,a также акции, спецпредложения и вот это вот всё.
             </p>
           </div>
-          <div class="newsletter-group">
+          <div class="newsletter-group page-content-container">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">email</label>
               <input class="field-newsletter" placeholder="Ваш e-mail" type="email" name="newsletter-email"
@@ -314,11 +321,10 @@
             <p class="newsletter-tip">Это бесплатно</p>
           </div>
         </section>
-      </div>
     </main>
 
     <footer class="page-footer">
-      <section class="footer-contacts">
+      <section class="footer-contacts page-content-container">
         <a class="footer-navigation-logo" href="index.html">
           <img class="footer-navigation-logo" src="images/pictures-html/logo-device-yellow.svg" width="145" height="36"
             alt="Логотип сайта Дивайс.">
