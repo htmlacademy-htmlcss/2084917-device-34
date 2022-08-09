@@ -948,6 +948,8 @@ padding-top: 20px;
 }
 
 .pagination-container {
+  min-width: 760px;
+  height: 71px;
   color: #000000;
   background-color: #EBEBEB;
 }
@@ -955,8 +957,10 @@ padding-top: 20px;
 .pagination-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 16px;
   list-style-type: none;
 }
 
@@ -979,8 +983,8 @@ padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   font: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -993,8 +997,9 @@ padding-top: 20px;
 
 .pagination-prev,
 .pagination-next {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  padding-left: 25px;
+  padding-right: 25px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1005,14 +1010,6 @@ padding-top: 20px;
   color: #000000;
   background-color: #EBEBEB;
 }
-
-/* .pagination-prev {
-  margin-right: auto;
-}
-
-.pagination-next {
-  margin-left: auto;
-} */
 
 /* для ссылок пагинации в неактивном состоянии */
 
