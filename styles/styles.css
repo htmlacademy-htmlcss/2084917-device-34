@@ -1202,6 +1202,7 @@ img {
 .footer-contacts-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 62px;
 }
 
 .footer-contacts-phone,
@@ -1219,22 +1220,10 @@ img {
   text-decoration: none;
 }
 
-.footer-contacts-address-text {
-  margin-bottom: 64px;
-}
-
 .footer-address-container {
   position: relative;
   display: block;
   max-width: 239px;
-}
-
-.footer-address-container::after {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 7px;
-  background-color: #ffc700;
 }
 
 .footer-contacts-address {
@@ -1246,6 +1235,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
   width: 444px;
   list-style: none;
 }
@@ -1270,14 +1260,25 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 655px;
+  width: 1160px;
   margin: 0;
   margin-left: auto;
+}
+
+.footer-social-container::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc700;
+  margin-right: auto;
 }
 
 .footer-social {
   display: flex;
   min-width: 190px;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -1307,30 +1308,6 @@ img {
   height: 40px;
   margin: 0;
   padding: 0;
-  color: #444444;
-}
-
-.link-telegram svg {
-  width: 14px;
-  height: 12px;
-}
-
-.link-youtube svg {
-  width: 16px;
-  height: 11px;
-}
-
-.link-twitter svg {
-  width: 15px;
-  height: 14px;
-}
-
-.footer-social-link::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 40px;
   background-color: #ffffff;
   border-radius: 50%;
   opacity: 0.3;
@@ -1339,6 +1316,7 @@ img {
 .copyright-container {
   display: flex;
   width: 115px;
+  margin-left: auto;
 }
 
 .htmlacademy-link svg {
