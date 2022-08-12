@@ -724,9 +724,7 @@ img {
 }
 
 .goods-category-link {
-  display: grid;
-  grid-row: 2/4;
-  grid-column: 1/2;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -746,7 +744,6 @@ img {
 .special-information {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   padding-bottom: 72px;
   padding-top: 72px;
 }
@@ -915,7 +912,7 @@ img {
   content: "";
   position: absolute;
   width: 120px;
-  height: 100px;
+  height: 100%;
   left: 0;
   top: 20px;
   transform: translateY(-20%);
@@ -977,12 +974,17 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
-  padding-left: 35px;
-  list-style-type: none;
+  margin-left: 15px;
 }
 
 .delivery-companies-item {
   margin-bottom: 19px;
+}
+
+.delivery-companies-item::marker {
+  color: #ffc700;
+  width: 8px;
+  height: 8px;
 }
 
 .delivery-companies-link {
@@ -998,7 +1000,7 @@ img {
   color: #000000;
 }
 
-.delivery-companies-link::before {
+/* .delivery-companies-link::before {
   content: "";
   display: block;
   position: absolute;
@@ -1011,7 +1013,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: -30px;
-}
+} */
 
 .contacts-information {
   width: 532px;
@@ -1173,12 +1175,11 @@ img {
 
 .newsletter-tip::before {
   content: "";
-  position: absolute;
   width: 16px;
   height: 16px;
   background-image: url("../images/pictures-html/icon-tick.svg");
   background-repeat: no-repeat;
-  left: -32px;
+  margin-right: 16px;
 }
 
 .page-footer {
