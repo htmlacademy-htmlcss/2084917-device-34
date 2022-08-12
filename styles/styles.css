@@ -598,6 +598,7 @@ img {
   display: flex;
   justify-content: space-between;
   top: 50%;
+  width: 50%;
 }
 
 .slider-button {
@@ -611,26 +612,27 @@ img {
 }
 
 .slider-prev {
-  position: absolute;
   display: block;
   background-image: url("../images/pictures-html/icon-button-previous.svg");
   background-repeat: no-repeat;
-  background-color: #ffffff;
-  top: 50%;
-  transform: translateX(50%) translateY(-50%);
+  background-color: transparent;
+  /* top: 50%;
+  transform: translateX(50%) translateY(-50%); */
 }
 
 .slider-next {
-  position: absolute;
   display: block;
   background-image: url("../images/pictures-html/icon-button-next.svg");
   background-repeat: no-repeat;
-  background-color: #ffffff;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  background-color: transparent;
+  /* top: 50%;
+  transform: translateX(-50%) translateY(-50%); */
 }
 
 .slider-pagination {
+  position: absolute;
+  bottom: 173px;
+  right: 50px;
   display: flex;
   justify-content: space-between;
   width: 76px;
@@ -640,7 +642,6 @@ img {
 }
 
 .slider-pagination-button {
-  position: absolute;
   display: block;
   box-sizing: border-box;
   bottom: 173px;
