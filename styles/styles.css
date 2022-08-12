@@ -303,7 +303,7 @@ img {
 }
 
 .popover-cart {
-  display: none;
+  /* display: none; */
 }
 
 .popover {
