@@ -597,8 +597,9 @@ img {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 50%;
-  width: 50%;
+  top: 211px;
+  width: 510px;
+  padding-left: 30px;
 }
 
 .slider-button {
@@ -616,8 +617,6 @@ img {
   background-image: url("../images/pictures-html/icon-button-previous.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-  /* top: 50%;
-  transform: translateX(50%) translateY(-50%); */
 }
 
 .slider-next {
@@ -625,16 +624,14 @@ img {
   background-image: url("../images/pictures-html/icon-button-next.svg");
   background-repeat: no-repeat;
   background-color: transparent;
-  /* top: 50%;
-  transform: translateX(-50%) translateY(-50%); */
 }
 
 .slider-pagination {
   position: absolute;
-  bottom: 173px;
-  right: 50px;
   display: flex;
   justify-content: space-between;
+  bottom: 173px;
+  right: 50px;
   width: 76px;
   margin: 0;
   padding: 0;
@@ -653,7 +650,6 @@ img {
   border: 2px solid #000000;
   background-color: #ffffff;
   cursor: pointer;
-  top: 50%;
 }
 
 .pagination-button-current {
