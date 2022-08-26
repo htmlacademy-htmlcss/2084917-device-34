@@ -197,8 +197,22 @@ img {
   border-radius: 50px 0px 0px 50px;
 }
 
+.navigation-user-link {
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+  color: #000000;
+  background-color: transparent;
+}
+
 .login-link {
-  margin-right: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 26px;
 }
 
@@ -207,22 +221,17 @@ img {
   display: block;
   width: 15px;
   height: 12px;
+  margin-right: 12px;
   background-image: url("../images/pictures-html/icon-profile.svg");
   background-size: 13px 12px;
-}
-
-.navigation-log-out {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #000000;
-  background-color: transparent;
-  opacity: 0.3;
+  background-repeat: no-repeat;
 }
 
 .navigation-user-name {
-  margin-left: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 26px;
   margin-right: 28px;
 }
 
@@ -231,8 +240,19 @@ img {
   display: block;
   width: 15px;
   height: 12px;
-  background-image: url("../images/pictures-html/icon-profile.svg");
   margin-right: 12px;
+  background-image: url("../images/pictures-html/icon-profile.svg");
+}
+
+.navigation-log-out {
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  background-color: transparent;
+  opacity: 0.3;
 }
 
 .navigation-user-list {
@@ -245,25 +265,10 @@ img {
   list-style-type: none;
 }
 
-.navigation-user-item {
-  position: relative;
-}
-
-.navigation-user-link {
-  position: relative;
-  display: block;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  text-transform: none;
-  text-decoration: none;
-  color: #000000;
-  background-color: transparent;
-}
-
 .compare-link {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .compare-link::before {
@@ -271,21 +276,26 @@ img {
   display: block;
   width: 10px;
   height: 12px;
+  margin-right: 12px;
   background-image: url("../images/pictures-html/icon-compare.svg");
   background-repeat: no-repeat;
 }
 
 .cart-link {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-link::before {
   content: "";
   display: block;
-  width: 13px;
-  height: 21px;
+  width: 16px;
+  height: 14px;
   background-image: url("../images/pictures-html/icon-shopping-bag.svg");
   background-repeat: no-repeat;
+  margin-right: 12px;
 }
 
 .goods-amount {
@@ -295,6 +305,9 @@ img {
   width: 21px;
   height: 21px;
   padding: 2px;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
   font-family: inherit;
   font-size: 14px;
