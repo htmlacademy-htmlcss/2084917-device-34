@@ -59,7 +59,7 @@
                   <span>Сумма: 2000 ₽</span>
                 </div>
                 <div class="popover-button-container">
-                  <button class="popover-button" type="button">Открыть&nbspкорзину</button>
+                  <a class="popover-button" href="#">Открыть&nbspкорзину</a>
                 </div>
               </div>
             </li>
@@ -462,6 +462,86 @@
       </section>
 
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+
+            <div class="modal-field-group">
+              <div class="modal-delivery-name">
+                <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post"></form>
+                <label class="modal-form-label" for="delivery-name">
+                  Ваше имя:
+                </label>
+                <input class="modal-form-field field-name" type="text" id="delivery-name" name="client-name"
+                  placeholder="Введите имя" required>
+                  <span class="tip-message">Добавьте имя</span>
+              </div>
+
+              <div class="modal-delivery-email">
+                <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post"></form>
+                <label class="modal-form-label" for="delivery-email">
+                  Ваш e-mail:
+                </label>
+                <input class="modal-form-field field-email" type="email" id="delivery-email" name="client-email"
+                  placeholder="почта" required>
+                <span class="error-message">Забавный у вас адрес</span>
+              </div>
+            </div>
+
+            <div class="modal-field-group">
+            <div class="modal-delivery-item">
+              <label class="modal-form-label" for="delivery-item">
+                Что нужно привезти:
+              </label>
+              <input class="modal-form-field field-item" type="text" id="delivery-item" name="client-item"
+                placeholder="В свободной форме" required>
+            </div>
+
+            <div class="modal-delivery-amount">
+              <label class="modal-form-label" for="delivery-amount">
+                Количество:
+                <span class="tooltip-icon"></span>
+              </label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <span class="visually-hidden">Дополнительная информация.</span>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Постараемся найти, сколько нужно.
+                  Привезём сколько получится по требованиям к провозу багажа.
+                </span>
+              </span>
+
+              <div class="amount-field-container">
+                <button class="amount-button amount-less" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H0v2h16V7Z" fill="#000"/></svg>
+
+                </button>
+                <input class="modal-form-field field-amount" type="number" id="delivery-amount" name="amount" min="1"
+                  placeholder="1">
+
+                <button class="amount-button amount-more" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000"/></svg>
+                </button>
+              </div>
+            </div>
+            </div>
+
+            <button class="button modal-button" type="submit">
+              Отправить
+            </button>
+
+          </form>
+
+        </section>
+      </div>
 
   </body>
 
