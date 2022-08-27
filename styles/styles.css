@@ -381,11 +381,13 @@ img {
 }
 
 .navigation-catalog-goods {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1040px;
   padding-left: 60px;
+  padding-bottom: 23px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -429,29 +431,53 @@ img {
   list-style-type: none;
 }
 
-.navigation-submenu {
-  display: flex;
-  margin: 0;
-  padding-left: 60px;
-  width: 675px;
+.navigation-menu-link {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
-.navigation-submenu-group {
+.popover-catalog {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  min-height: 180px;
+  top: 80px;
+  left: 0;
+  color: #000000;
+  background-color: #ffe17f;
+}
+
+.popover-catalog-hidden {
   display: none;
+}
+
+.catalog-goods-link:hover + .popover-catalog,
+.catalog-goods-link:active + .popover-catalog,
+.catalog-goods-link:focus-within + .popover-catalog {
+  display: flex;
+}
+
+.popover-catalog:focus-within {
+  display: flex;
 }
 
 .navigation-submenu-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
-  margin-right: 30px;
-  margin-bottom: 27px;
+  margin-right: 10px;
   padding: 0;
+  padding-bottom: 27px;
+  padding-left: 60px;
   list-style-type: none;
 }
 
 .navigation-submenu-link {
-  display: inline-block;
+  display: block;
+  margin-bottom: 18px;
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
