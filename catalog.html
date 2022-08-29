@@ -17,30 +17,31 @@
         </a>
         <div class="navigation-user-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="text-search">Текст поиска</label>
-            <input class="field" placeholder="Текст поиска" type="text" id="text-search" name="text-search" required>
+            <label class="visually-hidden" for="search">Текст поиска</label>
+            <input class="search-input" type="text" name="search" id="search" placeholder="Текст поиска" required>
             <button class="button search-button" type="submit">Найти</button>
           </form>
-          <a class="navigation-user-link navigation-user-name" href="#"><span class="visually-hidden">Имя
-              пользователя.</span>Коля
-            Петухов</a>
-          <a class="navigation-user-link navigation-log-out">Выйти</a>
+          <a class="navigation-user-link user-name-link" href="#"><span class="visually-hidden">Имя
+              пользователя.</span>
+            Коля Петухов</a>
+          <a class="navigation-user-link log-out-link">Выйти</a>
           <ul class="navigation-user-list">
             <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
+              <a class="navigation-user-link compare-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-user-item">
-              <span class="goods-amount">2</span>
-              <a class="navigation-user-link" href="#">Корзина</a>
+            <li class="navigation-user-item cart-link-popover">
+              <a class="navigation-user-link cart-link" href="#">Корзина
+                <span class="goods-amount">2</span>
+              </a>
               <div class="popover popover-cart">
                 <ul class="popover-list">
                   <li class="popover-item">
                     <div class="popover-goods">
                       <img class="popover-image" src="images/pictures-html/goods-one-selfie.jpg"
                         alt="Любительская селфи-палка." width="39" height="43">
-                      <a class="popover-link" href="#">Любительская селфи-палка</a>
+                      <a class="popover-link" href="#">Любительская<br>селфи-палка</a>
                     </div>
-                    <button class="close" type="button">
+                    <button class="close-button-one" type="button">
                       <span class="visually-hidden">Закрыть.</span>
                     </button>
                   </li>
@@ -48,9 +49,9 @@
                     <div class="popover-goods">
                       <img class="popover-image" src="images/pictures-html/goods-two-selfie.jpg"
                         alt="Профессиональная селфи-палка." width="39" height="43">
-                      <a class="popover-link" href="#">Профессиональная селфи-палка</a>
+                      <a class="popover-link" href="#">Профессиональная<br>селфи-палка</a>
                     </div>
-                    <button class="close" type="button">
+                    <button class="close-button-two" type="button">
                       <span class="visually-hidden">Закрыть.</span>
                     </button>
                   </li>
@@ -59,7 +60,9 @@
                   <span>Товаров: 2</span>
                   <span>Сумма: 2000 ₽</span>
                 </div>
-                <button class="popover-button" type="button">Открыть корзину</button>
+                <div class="popover-button-container">
+                  <button class="popover-button" type="button">Открыть&nbsp;корзину</button>
+                </div>
               </div>
             </li>
           </ul>
@@ -68,9 +71,7 @@
         <section class="navigation-catalog-goods">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <a class="link catalog-goods-link " href="catalog.html">Каталог товаров</a>
-
-          <section class="navigation-submenu navigation-submenu-group">
-            <h3 class="visually-hidden">Наименование товаров</h3>
+          <div class="popover-catalog popover-catalog-hidden">
             <ul class="navigation-submenu-list">
               <li class="navigation-submenu-item">
                 <a class="navigation-submenu-link" href="#">Виртуальная реальность</a>
@@ -95,8 +96,7 @@
                 <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
-          </section>
-
+          </div>
           <ul class="navigation-menu-list">
             <li class="navigation-menu-item">
               <a class="link navigation-menu-link " href="#">Доставка</a>
@@ -236,11 +236,6 @@
                     <g opacity=".2" clip-path="url(#a)">
                       <path d="m6 0 5.5 10H.5" fill="#000" />
                     </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" transform="translate(.5)" d="M0 0h11v10H0z" />
-                      </clipPath>
-                    </defs>
                   </svg>
                   <span class="visually-hidden">Наверх.</span>
                 </a>
@@ -249,11 +244,6 @@
                     <g opacity=".2" clip-path="url(#a)">
                       <path d="M6 10 .5 0h11" fill="#000" />
                     </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" transform="rotate(180 5.75 5)" d="M0 0h11v10H0z" />
-                      </clipPath>
-                    </defs>
                   </svg>
                   <span class="visually-hidden">Вниз.</span>
                 </a>
@@ -313,7 +303,7 @@
                     </div>
                   </li>
                 </ul>
-                <a class="button goods-card-button" href="#">Загрузить ещё</a>
+                <button class="goods-card-button" type="button">Загрузить ещё</button>
                 <div class="pagination-container">
                   <ul class="pagination-list">
                     <li class="pagination-item">
@@ -386,7 +376,7 @@
           </div>
 
           <div class="contacts-phone-container">
-            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           </div>
         </div>
 
