@@ -69,11 +69,11 @@ img {
 }
 
 .button {
-  z-index: 1;
   position: relative;
   box-sizing: border-box;
-  padding: 10px 5px;
+  padding: 8px 5px;
   width: 220px;
+  height: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -94,14 +94,39 @@ img {
   z-index: -2;
   top: 50%;
   transform: translateY(-50%);
-  left: -2px;
-  width: 220px;
+  left: 0;
+  right: 0;
   height: 8px;
   background-color: #FFE17F;
   background-position: center;
 }
 
+.button:hover::before {
+  width: 220px;
+  height: 40px;
+  background-color: #FFE17F;
+}
+
+.button:active::before {
+  width: 220px;
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.button:focus {
+  width: 220px;
+  height: 40px;
+  border: 2px solid #af4fff;
+}
+
+/* для кнопок в неактивном состоянии */
+
+.button:disabled {
+  opacity: 0.3;
+}
+
 .search-button {
+  position: relative;
   box-sizing: border-box;
   width: 160px;
   height: 40px;
@@ -123,6 +148,29 @@ img {
   content: none;
 }
 
+.search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.search-button:focus::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 161px;
+  height: 40px;
+  border-radius: 0;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
 .button-newsletter {
   display: block;
   box-sizing: border-box;
@@ -137,23 +185,61 @@ img {
   content: none;
 }
 
+.button-newsletter:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: 3px solid #000000;
+}
+
+.button-newsletter:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+  border: 3px solid #000000;
+}
+
+.button-newsletter:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .goods-card-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 760px;
-  margin: 0 auto;
+  height: 40px;
+  margin: 0;
   margin-bottom: 44px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   letter-spacing: 0.2em;
   color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #E5E5E5;
+}
+
+.goods-card-button:hover {
+  border: 3px solid #000000;
+}
+
+.goods-card-button:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.goods-card-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.button-newsletter:disabled,
+.goods-card-button:disabled {
+  border: 3px solid #E5E5E5;
+  opacity: 0.3;
 }
 
 .page-header {
@@ -178,9 +264,9 @@ img {
   width: 145px;
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 60px;
   padding: 0;
   padding-top: 19px;
-  padding-left: 60px;
   border: 2px solid transparent;
 }
 
@@ -234,12 +320,32 @@ img {
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: 16px center;
-  border: 2px solid #000000;
+  border: 2px solid transparent;
   border-radius: 50px 0px 0px 50px;
 }
 
 .search-input::placeholder {
   color: #000000;
+}
+
+.search-input:placeholder-shown {
+  border-color: #000000;
+}
+
+.search-input-container:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.search-input:disabled,
+.field-newsletter:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.search-input:default {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .navigation-user-link {
@@ -272,7 +378,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.navigation-user-name {
+.user-name-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,7 +386,7 @@ img {
   margin-right: 28px;
 }
 
-.navigation-user-name::before {
+.user-name-link::before {
   content: "";
   display: block;
   width: 15px;
@@ -289,7 +395,7 @@ img {
   background-image: url("../images/pictures-html/icon-profile.svg");
 }
 
-.navigation-log-out {
+.log-out-link {
   display: block;
   font-family: inherit;
   font-size: 18px;
@@ -361,6 +467,27 @@ img {
   color: #000000;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+.login-link:hover,
+.user-name-link:hover,
+.compare-link:hover,
+.cart-link:hover {
+  opacity: 0.6;
+}
+
+.login-link:active,
+.user-name-link:active,
+.compare-link:active,
+.cart-link:active {
+  opacity: 0.3;
+}
+
+.login-link:focus,
+.user-name-link:focus,
+.compare-link:focus,
+.cart-link:focus {
+  outline: 2px solid #AF4FFF;
 }
 
 .cart-link-popover {
@@ -471,8 +598,8 @@ img {
 
 .popover-button-container {
   padding: 20px;
-
 }
+
 .popover-button {
   display: block;
   box-sizing: border-box;
@@ -731,6 +858,7 @@ img {
 .button-information {
   display: block;
   width: 220px;
+  height: 40px;
 }
 
 .details-group-container {
@@ -1239,11 +1367,10 @@ img {
   padding: 0;
 }
 
-.button-about-us,
-.button-contacts {
+.button-about-us {
   position: relative;
   display: block;
-  width: 259px;
+  width: 270px;
 }
 
 .button-about-us::before {
@@ -1252,9 +1379,32 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 270px;
   height: 8px;
   background-color: #FFE17F;
+}
+
+.button-about-us:hover::before {
+  width: 270px;
+  height: 40px;
+  background-color: #FFE17F;
+}
+
+.button-about-us:active::before {
+  width: 270px;
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.button-about-us:focus {
+  width: 270px;
+  height: 40px;
+  border: 2px solid #af4fff;
+}
+
+.button-contacts {
+  position: relative;
+  display: block;
+  width: 260px;
 }
 
 .button-contacts::before {
@@ -1263,11 +1413,27 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 260px;
   height: 8px;
   background-color: #FFE17F;
 }
 
+.button-contacts:hover::before {
+  width: 260px;
+  height: 40px;
+  background-color: #FFE17F;
+}
+
+.button-contacts:active::before {
+  width: 260px;
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.button-contacts:focus {
+  width: 260px;
+  height: 40px;
+  border: 2px solid #af4fff;
+}
 
 .newsletter {
   color: #000000;
@@ -1319,6 +1485,17 @@ img {
   border-bottom: 3px solid #C4C4C4;
 }
 
+.field-newsletter:focus {
+  background-color: #dcdcdc;
+  outline: none;
+}
+
+/* ошибка при вводе e-mail */
+
+.invalid {
+  border-color: #ff3d3d;
+}
+
 .newsletter-tip {
   position: relative;
   display: flex;
@@ -1357,6 +1534,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+  border: 2px solid transparent;
 }
 
 .footer-navigation-logo:hover {
@@ -1370,13 +1548,12 @@ img {
 .footer-navigation-logo:focus::before {
   content: "";
   position: absolute;
-  top: -3px;
+  top: -2px;
   left: -3px;
   width: 150px;
   height: 40px;
   border: 2px solid #AF4FFF;
 }
-
 
 .footer-contacts-container {
   display: flex;
@@ -1702,14 +1879,14 @@ img {
   text-align: center;
   color: #000000;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .field-amount::-webkit-outer-spin-button,
 .field-amount::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .field-amount:invalid,
@@ -1744,19 +1921,19 @@ img {
   cursor: pointer;
 }
 
-.amount-button:hover svg{
+.amount-button:hover svg {
   fill-opacity: 0.6;
 }
 
-.amount-button:active svg{
+.amount-button:active svg {
   fill-opacity: 0.3;
 }
 
-.amount-button:focus svg{
+.amount-button:focus svg {
   outline: 2px solid #af4fff;
 }
 
-.amount-button:disabled svg{
+.amount-button:disabled svg {
   opacity: 0.3;
   pointer-events: none;
 }
@@ -1829,19 +2006,24 @@ img {
 }
 
 .modal-button {
+  z-index: 1;
   position: relative;
   box-sizing: border-box;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-  background-color: transparent;
-  border: 2px solid transparent;
-}
-
-.modal-button:focus {
+  margin: 0;
+  padding: 8px 6px;
   width: 220px;
   height: 40px;
-  border: 2px solid #af4fff;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid transparent;
 }
 
 .modal-button::before {
@@ -1851,8 +2033,8 @@ img {
   z-index: -2;
   top: 50%;
   transform: translateY(-50%);
-  left: -1px;
-  width: 220px;
+  left: 0;
+  right: 0;
   height: 8px;
   background-color: #FFE17F;
   background-position: center;
@@ -1870,8 +2052,10 @@ img {
   background-color: #FFCC33;
 }
 
-.modal-button::before:disabled {
-  opacity: 0.3;
+.modal-button:focus {
+  width: 220px;
+  height: 40px;
+  border: 2px solid #af4fff;
 }
 
 /* Состояние ошибки для полей ввода информации модального окна */
@@ -1929,6 +2113,18 @@ img {
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 .catalogs-goods-container {

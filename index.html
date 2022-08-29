@@ -18,8 +18,10 @@
         <div class="navigation-user-container">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="search">Текст поиска</label>
-            <input class="search-input" type="text" name="search" id="search" placeholder="Текст поиска" required>
-            <button class="button search-button" type="submit">Найти</button>
+            <div class="search-input-container">
+              <input class="search-input" type="text" name="search" id="search" placeholder="Текст поиска" required>
+            </div>
+            <button class="search-button" type="submit">Найти</button>
           </form>
           <a class="navigation-user-link login-link" href="#">Войти</a>
           <ul class="navigation-user-list">
@@ -481,8 +483,8 @@
                 <label class="modal-form-label" for="delivery-email">
                   Ваш e-mail:
                 </label>
-                <input class="modal-form-field field-email error-condition" type="email" id="delivery-email" name="delivery-email"
-                  placeholder="почта" required>
+                <input class="modal-form-field field-email error-condition" type="email" id="delivery-email"
+                  name="delivery-email" placeholder="почта" required>
                 <span class="error-message">Забавный у вас адрес</span>
               </div>
             </div>
@@ -527,7 +529,7 @@
                 </div>
               </div>
             </div>
-            <button class="button modal-button" type="submit">
+            <button class="modal-button" type="submit">
               Отправить
             </button>
           </form>
