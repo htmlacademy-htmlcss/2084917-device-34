@@ -84,7 +84,7 @@ img {
   color: #000000;
   text-align: center;
   cursor: pointer;
-  border: transparent;
+  border: 2px solid transparent;
 }
 
 .button::before {
@@ -1457,7 +1457,6 @@ img {
   fill: #ffc700;
 }
 
-
 .modal-container {
   z-index: 2;
   position: fixed;
@@ -1596,12 +1595,6 @@ img {
   pointer-events: none;
 }
 
-.field-email:invalid,
-.field-email:invalid:focus {
-  outline: 2px solid #ff3d3d;
-  outline-offset: -2px;
-}
-
 .tip-message {
   padding-top: 1px;
   font-family: inherit;
@@ -1638,6 +1631,10 @@ img {
   background-position: 325px;
   background-size: 15px 12px;
   background-repeat: no-repeat;
+}
+
+.field-email::placeholder {
+  color: #000000;
 }
 
 .field-item {
@@ -1677,10 +1674,6 @@ img {
 }
 
 .field-amount::placeholder {
-  color: #000000;
-}
-
-.field-email::placeholder {
   color: #000000;
 }
 
@@ -1791,7 +1784,10 @@ img {
   position: relative;
   box-sizing: border-box;
   width: 200px;
+  height: 40px;
+  text-align: center;
   background-color: transparent;
+  border: 2px solid transparent;
 }
 
 .modal-button::before {
@@ -1801,15 +1797,43 @@ img {
   z-index: -2;
   top: 50%;
   transform: translateY(-50%);
-  left: -2px;
-  width: 200px;
+  left: -1px;
+  width: 220px;
   height: 8px;
   background-color: #FFE17F;
   background-position: center;
 }
 
+.modal-button:focus {
+  width: 220px;
+  height: 40px;
+  outline: 2px solid #af4fff;
+}
+
+.modal-button:hover::before {
+  width: 220px;
+  height: 40px;
+  background-color: #FFE17F;
+}
+
+.modal-button:active::before {
+  width: 220px;
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.modal-button::before:disabled {
+  opacity: 0.3;
+}
+
+/* Состояние ошибки для полей ввода информации модального окна */
+
+.error-condition {
+  outline: 2px solid #ff3d3d;
+}
+
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .breadcrumbs-container {
